@@ -1,1 +1,2 @@
 #!/bin/bash
+readarray -d : -t paths <<< "$PATH"; echo "${#paths[*]}"
