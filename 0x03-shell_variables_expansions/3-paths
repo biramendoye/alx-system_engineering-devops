@@ -1,2 +1,2 @@
 #!/bin/bash
-readarray -d : -t paths <<< "$PATH" > echo "${#paths[*]}"
+echo $(($(echo $PATH | tr -cd : | wc -c) + 1))
