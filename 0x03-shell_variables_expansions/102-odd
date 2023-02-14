@@ -1,3 +1,2 @@
 #!/bin/bash
 ls -1 | nl -w1 -s' ' | paste -d' ', - - | cut -d' ' -f2
-
